@@ -9,19 +9,139 @@ html,body{
 body{
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
-
-.logo{ padding-top: 200px }
-
+.logo{
+  padding: 200px 0;
+  animation-name: logo-spin;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
 .cube{
   width: 150px;
   height: 150px;
+  position: relative;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 .line{
   display: flex;
   justify-content: center;
 }
 
-.cube1 { background: #f65314 }
-.cube2 { background: #7cbb00 }
-.cube3 { background: #00a1f1 }
-.cube4 { background: #ffbb00 }
+.cube1{
+  background: #f65314;
+  animation-name: cube1;
+  z-index: 1;
+}
+.cube2{
+  background: #7cbb00;
+  animation-name: cube2;
+  z-index: 2;
+}
+.cube3{
+  background: #00a1f1;
+  animation-name: cube3;
+  z-index: 3;
+}
+.cube4{
+  background: #ffbb00;
+  animation-name: cube4;
+  z-index: 4;
+}
+
+@keyframes cube1{
+  0%{
+    left: 0px;
+    top: 0px;
+  }
+  25%{
+    top: 0px;
+    left: 150px;
+  }
+  50%{
+    left: 150px;
+    top: 150px;
+  }
+  75%{
+    top: 150px;
+    left: 0px;
+  }
+  100%{
+    top: 0px;
+    left: 0px;
+  }
+}
+@keyframes cube2{
+  0%{
+    left: 0px;
+    top: 0px;
+  }
+  25%{
+    top: 150px;
+    left: 0px;
+  }
+  50%{
+    left: -150px;
+    top: 150px;
+  }
+  75%{
+    top: 0px;
+    left: -150px;
+  }
+  100%{
+    top: 0px;
+    left: 0px;
+  }
+}
+@keyframes cube3{
+  0%{
+    left: 0px;
+    top: 0px;
+  }
+  25%{
+    top: -150px;
+    left: 0px;
+  }
+  50%{
+    left: 150px;
+    top: -150px;
+  }
+  75%{
+    top: 0px;
+    left: 150px;
+  }
+  100%{
+    top: 0px;
+    left: 0px;
+  }
+}
+@keyframes cube4{
+  0%{
+    left: 0px;
+    top: 0px;
+  }
+  25%{
+    top: 0px;
+    left: -150px;
+  }
+  50%{
+    left: -150px;
+    top: -150px;
+  }
+  75%{
+    top: -150px;
+    left: 0px;
+  }
+  100%{
+    top: 0px;
+    left: 0px;
+  }
+}
+@keyframes logo-spin {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
