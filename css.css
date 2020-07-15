@@ -1,0 +1,27 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html,body{
+  height: 100%;
+}
+body{
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.logo{ padding-top: 200px }
+
+.cube{
+  width: 150px;
+  height: 150px;
+}
+.line{
+  display: flex;
+  justify-content: center;
+}
+
+.cube1 { background: #f65314 }
+.cube2 { background: #7cbb00 }
+.cube3 { background: #00a1f1 }
+.cube4 { background: #ffbb00 }
